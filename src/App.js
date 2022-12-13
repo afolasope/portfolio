@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import styled from 'styled-components';
+import AboutMe from './components/AboutMe';
+import MobileNav from './components/MobileNav';
+import Navbar from './components/Navbar';
 
 function App() {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Wrapper>
+      <header>
+        <div className="mobile-nav">
+          <MobileNav navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
+        </div>
+        <div className="web-nav">
+          <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
+        </div>
       </header>
-    </div>
+      <div className="about-container flex items-center h-screen">
+        <AboutMe />
+      </div>
+    </Wrapper>
   );
 }
 
+const Wrapper = styled.main`
+  .about-container {
+    height: calc(100vh - 88px);
+  }
+`;
 export default App;
