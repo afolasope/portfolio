@@ -13,8 +13,8 @@ const AboutMe = () => {
       </p>
       <div className="md:max-w-2xl">
         <p>
-          High level experience in web design and development knowledge.
-          Producing quality work
+          {/* High level experience in web design and development knowledge. */}
+          {/* Producing quality work */}
         </p>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut culpa

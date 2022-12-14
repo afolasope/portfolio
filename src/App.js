@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import AboutMe from './components/AboutMe';
 import MobileNav from './components/MobileNav';
 import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 
 function App() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -17,8 +18,12 @@ function App() {
           <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
         </div>
       </header>
-      <div className="about-container flex items-center h-screen">
+      <div className="about-container flex items-center py-16">
         <AboutMe />
+      </div>
+      <hr />
+      <div>
+        <Projects/>
       </div>
     </Wrapper>
   );
@@ -26,7 +31,7 @@ function App() {
 
 const Wrapper = styled.main`
   .about-container {
-    height: calc(100vh - 88px);
+    min-height: calc(100vh - 88px);
   }
 `;
 export default App;
