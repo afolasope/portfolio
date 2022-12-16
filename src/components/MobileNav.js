@@ -13,7 +13,7 @@ const MobileNav = ({ navbarOpen, setNavbarOpen }) => {
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
-          <li>Portfolio</li>
+          <li>Projects</li>
           <li>Contact</li>
         </ul>
       </div>

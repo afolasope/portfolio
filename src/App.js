@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import AboutMe from './components/AboutMe';
+import About from './components/About';
+import Contact from './components/Contact';
+import Home from './components/Home';
 import MobileNav from './components/MobileNav';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
@@ -19,12 +21,11 @@ function App() {
         </div>
       </header>
       <div className="about-container flex items-center py-16">
-        <AboutMe />
+        <Home />
       </div>
-      <hr />
-      <div>
-        <Projects/>
-      </div>
+      <About />
+      <Projects />
+      <Contact />
     </Wrapper>
   );
 }
@@ -32,6 +33,7 @@ function App() {
 const Wrapper = styled.main`
   .about-container {
     min-height: calc(100vh - 88px);
+    
   }
 `;
 export default App;

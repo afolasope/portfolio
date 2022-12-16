@@ -38,39 +38,64 @@ const Projects = () => {
   // }, [currView]);
 
   return (
-    <Wrapper className="relative p-8 border ">
-      <h1 className="text-center mb-6">Recent Projects</h1>
-      <article className="text-center border mb-12 bg-[#F5F8FA] md:flex">
-        <div className="image-container p-3">
-          <img src={projects[currView].image} alt="" />
-        </div>
-        <div className="card-text p-3">
-          <p className="font-bold">{projects[currView].title}</p>
-          <p className="border">{projects[currView].desc}</p>
-          <ul className="flex mt-3">
-            {projects[currView].tags.map((item, index) => {
-              return (
-                <li key={index} className="border p-2 ">
-                  {item}
-                </li>
-              );
-            })}
-          </ul>
-          <div>
-            <button>Source code</button>
-            <button>Live link</button>
+    <Wrapper className="relative p-8 md:px-24">
+      <h3 className="text-center mb-6 font-semibold text">Recent Projects</h3>
+      <div className='flex space-x-24'>
+        <article className="text-center border mb-12 bg-[#F5F8FA]">
+          <div className="image-container p-3">
+            <img src={projects[currView].image} alt="" />
           </div>
-        </div>
-      </article>
+          <div className="card-text p-3">
+            <p className="font-bold">{projects[currView].title}</p>
+            <p className="border">{projects[currView].desc}</p>
+            <ul className="flex mt-3">
+              {projects[currView].tags.map((item, index) => {
+                return (
+                  <li key={index} className="border p-2 ">
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+            <div>
+              <button>Source code</button>
+              <button>Live link</button>
+            </div>
+          </div>
+        </article>
+        <article className="text-center border mb-12 bg-[#F5F8FA] ">
+          <div className="image-container p-3">
+            <img src={projects[currView].image} alt="" />
+          </div>
+          <div className="card-text p-3">
+            <p className="font-bold">{projects[currView].title}</p>
+            <p className="border">{projects[currView].desc}</p>
+            <ul className="flex mt-3">
+              {projects[currView].tags.map((item, index) => {
+                return (
+                  <li key={index} className="border p-2 ">
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+            <div>
+              <button>Source code</button>
+              <button>Live link</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
       <div>
         <span
-          className="absolute top-[50%] left-0 text-3xl -translate-y-1/2 md:text-5xl "
+          className="absolute top-[50%] left-0 text-3xl -translate-y-1/2 md:text-5xl md:p-6"
           onClick={goToPrev}
         >
           <BsArrowLeftCircle />
         </span>
         <span
-          className="absolute top-[50%] right-0 text-3xl -translate-y-1/2 md:text-5xl "
+          className="absolute top-[50%] right-0 text-3xl -translate-y-1/2 md:text-5xl md:p-6"
           onClick={goToNext}
         >
           <BsArrowRightCircle />
@@ -89,15 +114,15 @@ const Wrapper = styled.div`
   @media (min-width: 768px) {
     padding: 7rem;
     .card-text {
-      width: 50%;
+      /* width: 50%; */
     }
-    .image-container {
+    /* .image-container {
       width: 50%;
       border: 1px solid teal;
       img {
         height: 100%;
         width: 100%;
       }
-    }
+    } */
   }
 `;
