@@ -1,4 +1,3 @@
-import image from '../assets/images/test-image.png';
 import space from '../assets/images/space.png';
 import worldy from '../assets/images/worldy.png';
 import bank from '../assets/images/bank.png';
