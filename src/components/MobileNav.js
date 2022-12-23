@@ -49,7 +49,7 @@ const Wrapper = styled.div`
   }
 
   .close-btn {
-    padding:  1rem;
+    padding: 1rem;
     display: flex;
     justify-content: flex-end;
   }

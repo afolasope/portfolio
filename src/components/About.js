@@ -31,7 +31,9 @@ const About = () => {
             reiciendis rem in dolores corporis!
           </p>
           <div className="mt-12">
-            <p className='mb-6'>Here are a few technologies I have recently worked with</p>
+            <p className="mb-6">
+              Here are a few technologies I have recently worked with
+            </p>
             <div className="flex flex-wrap items-center gap-6">
               <div className="flex item-center h-12 w-12 hidden lg:block">
                 <img src={htmlSvg} alt="" />

@@ -23,14 +23,14 @@ const projects = [
     id: 3,
     title: 'Project 004 ',
     desc: 'Labore doloremque voluptatem cum suscipit, expedita rem fugit illum iure repudiandae? In quo dolorum beatae explicabo?',
-    image:bank,
+    image: bank,
     tags: ['tailwind', 'react', 'api'],
   },
   {
     id: 4,
     title: 'Project 004 ',
     desc: 'Labore doloremque voluptatem cum suscipit, expedita rem fugit illum iure repudiandae? In quo dolorum beatae explicabo?',
-    image:todo,
+    image: todo,
     tags: ['tailwind', 'react', 'api'],
   },
 ];

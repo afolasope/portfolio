@@ -17,8 +17,7 @@ const Contact = () => {
         Developer Roles. <br /> Get In Touch With Me
       </p>
       <button className="px-4 py-2 m-auto block bg-[#ED765D] rounded-lg text-[#fff] mt-12 ">
-        <a href="mailto:folasopeadebanjo@gmail.com"></a>
-        Send An Email
+        <a href="mailto:folasopeadebanjo@gmail.com"> Send An Email</a>
       </button>
       <div className="social-icons flex justify-center mt-12 ">
         <button>
