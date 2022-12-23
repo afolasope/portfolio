@@ -33,7 +33,6 @@ function App() {
 const Wrapper = styled.main`
   .about-container {
     min-height: calc(100vh - 88px);
-    
   }
 `;
 export default App;

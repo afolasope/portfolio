@@ -20,12 +20,20 @@ const Home = () => {
       </div>
       <div className="logo-container flex mt-12 md:mt-24">
         <div>
-          <a href="https://github.com/afolasope">
+          <a
+            href="https://github.com/afolasope"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="https://www.bermeo.dev/social/github.svg" alt="" />
           </a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/afolasope-adebanjo/">
+          <a
+            href="https://www.linkedin.com/in/afolasope-adebanjo/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="https://www.bermeo.dev/social/linkedin.svg" alt="" />
           </a>
         </div>

@@ -9,24 +9,33 @@ import styled from 'styled-components';
 
 const Contact = () => {
   return (
-    <Wrapper className="md:p-24">
-      <h3 className="font-semibold text-center mb-6">Reach Out!</h3>
+    <Wrapper className="p-6 md:p-24">
+      <h3 className="text-3xl font-semibold text-center mb-6">Reach Out!</h3>
       <p className="mb-6 text-center">
         Are You Interested In A Web Developer That Loves Fun Builds And
         Projects? Hit Me Up. <br /> I'm Open To Freelance, Part Time And Junior
         Developer Roles. <br /> Get In Touch With Me
       </p>
       <button className="px-4 py-2 m-auto block bg-[#ED765D] rounded-lg text-[#fff] mt-12 ">
+        <a href="mailto:folasopeadebanjo@gmail.com"></a>
         Send An Email
       </button>
-      <div className="social-icons text-center mt-12">
+      <div className="social-icons flex justify-center mt-12 ">
         <button>
-          <a href="#">
+          <a
+            href="https://github.com/afolasope"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillGithub />
           </a>
         </button>
         <button>
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/afolasope-adebanjo/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillLinkedin />
           </a>
         </button>
@@ -35,8 +44,12 @@ const Contact = () => {
             <AiFillMail />
           </a>
         </button>
-        <button>
-          <a href="#">
+        <button className="border">
+          <a
+            href="https://twitter.com/afolasope_"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillTwitterSquare />
           </a>
         </button>
@@ -51,7 +64,7 @@ const Wrapper = styled.div`
   .social-icons {
     button {
       font-size: 2rem;
-      margin-right: 3rem;
+      margin-right: 2rem;
     }
   }
 `;

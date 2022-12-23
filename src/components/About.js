@@ -1,15 +1,23 @@
 import React from 'react';
-import image from '../assets/images/test-image.png';
+import {
+  githubSvg,
+  htmlSvg,
+  reactSvg,
+  sassSvg,
+  styledComSvg,
+  tailwindSvg,
+  typescriptSvg,
+} from '../assets/svg';
 
 const About = () => {
   return (
     <div className=" p-8 md:px-24">
-      <div className="flex items-center space-x-6">
-        <h3 className="mb-8">About Me</h3>
-        <hr className="w-1/4" />
+      <div className="flex items-center space-x-6 mb-8">
+        <h3 className="text-3xl">About Me</h3>
+        <hr className="w-1/4 border-[#ED765D]" />
       </div>
-      <div className="flex justify-between">
-        <div className="w-1/2 border">
+      <div className="md:flex md:justify-between">
+        <div className="lg:w-1/2 ">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
             doloribus tenetur fugiat corporis vitae asperiores iure, similique
@@ -23,16 +31,36 @@ const About = () => {
             reiciendis rem in dolores corporis!
           </p>
           <div className="mt-12">
-            <p>Here are a few technologies I have recently worked with</p>
-            <div>
-              <img src="" alt="" />
+            <p className='mb-6'>Here are a few technologies I have recently worked with</p>
+            <div className="flex flex-wrap items-center gap-6">
+              <div className="flex item-center h-12 w-12 hidden lg:block">
+                <img src={htmlSvg} alt="" />
+              </div>
+              <div className="flex item-center h-12 w-12">
+                <img src={reactSvg} alt="" />
+              </div>
+              <div className="flex item-center h-12 w-12">
+                <img src={sassSvg} alt="" />
+              </div>
+              <div className="flex item-center h-12 w-12 border">
+                <img src={tailwindSvg} alt="" />
+              </div>
+              <div className="flex item-center h-12 w-12">
+                <img src={typescriptSvg} alt="" />
+              </div>
+              <div className="flex item-center h-12 w-12">
+                <img src={styledComSvg} alt="" />
+              </div>
+              <div className="flex item-center h-12 w-12">
+                <img src={githubSvg} alt="" />
+              </div>
             </div>
           </div>
         </div>
-        <div className="border ">
-          <div className="flex justify-center items-center h-[32rem] w-[32rem] border rounded-full">
-            <div className="flex justify-center items-center h-[24rem] w-[24rem] border rounded-full">
-              <div className="h-[15rem] w-[15rem] border rounded-full"></div>
+        <div className="hidden lg:block ">
+          <div className="flex justify-center items-center h-[28rem] w-[28rem] border rounded-full">
+            <div className="flex justify-center items-center h-[20rem] w-[20rem] border rounded-full">
+              <div className="h-[12rem] w-[12rem] border rounded-full"></div>
             </div>
           </div>
         </div>
