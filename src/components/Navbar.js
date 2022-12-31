@@ -7,11 +7,18 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
     <Wrapper>
       <h1>Afolasope</h1>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
       <div
         className="open-nav"
@@ -39,7 +46,7 @@ const Wrapper = styled.nav`
       display: flex;
       justify-content: space-between;
       list-style-type: none;
-      width: 60%;
+      width: 50%;
     }
     @media (min-width: 800px) {
       width: 50%;

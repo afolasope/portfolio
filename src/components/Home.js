@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Home = () => {
   return (
-    <Wrapper className="px-6 md:px-24">
+    <Wrapper className="px-6 md:px-24" id='home'>
       <p className="text-[#6272A4] text-xl mb-6">Hello, my name is</p>
       <h1 className="text-5xl mb-4 md:text-6xl">Afolasope Adebanjo.</h1>
       <p className="text-3xl mb-2 font-semibold md:text-6xl md:mb-12">

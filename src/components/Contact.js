@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 const Contact = () => {
   return (
-    <Wrapper className="p-6 md:p-24">
+    <Wrapper className="p-6 md:p-24" id='contact'>
       <h3 className="text-3xl font-semibold text-center mb-6">Reach Out!</h3>
       <p className="mb-6 text-center">
         Are You Interested In A Web Developer That Loves Fun Builds And
