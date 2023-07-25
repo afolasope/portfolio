@@ -14,7 +14,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects ">Projects</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
@@ -36,6 +36,12 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
 export default Navbar;
 
 const Wrapper = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -49,7 +55,42 @@ const Wrapper = styled.nav`
       width: 50%;
     }
     @media (min-width: 800px) {
-      width: 50%;
+      width: 40%;
+    }
+    li {
+      a {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        &:active {
+          color: #ee765d;
+        }
+        &:hover {
+          color: #ee765d;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 1px;
+          content: '.';
+          color: transparent;
+          /* background: #f1c40f; */
+          visibility: none;
+          opacity: 0;
+          z-index: -1;
+        }
+        &:hover::after {
+          opacity: 1;
+          visibility: visible;
+          height: 100%;
+        }
+      }
     }
   }
   @media (min-width: 600px) {
@@ -57,4 +98,47 @@ const Wrapper = styled.nav`
       display: none;
     }
   }
+  /* 
+  @keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: #333;
+    }
+  }
+
+  @keyframes circle {
+    0% {
+      width: 1px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      z-index: -1;
+      background: #eee;
+      border-radius: 100%;
+    }
+    100% {
+      background: #aaa;
+      height: 5000%;
+      width: 5000%;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 0;
+    }
+  } */
 `;

@@ -2,33 +2,27 @@ import space from '../assets/images/space.png';
 import worldy from '../assets/images/worldy.png';
 import bank from '../assets/images/bank.png';
 import todo from '../assets/images/todo.png';
+import folarooney from '../assets/images/folarooney.png';
+import scrs from '../assets/images/scrs.png';
 
 const projects = [
   {
-    id: 1,
-    title: 'Explora',
+    id: 11,
+    title: 'Scrs - Url shortening app',
     desc: 'Minus repellat explicabo aspernatur velit, vel, labore doloremque voluptatem cum suscipit,In quo dolorum beatae explicabo?',
-    image: space,
-    tags: ['tailwind', 'react', 'api'],
+    image: scrs,
+    tags: ['mern', 'express', 'react ', 'api'],
+    repoLink: 'https://github.com/afolasope/url-shortener-mern',
+    liveLink: 'https://scrs-io.onrender.com',
   },
   {
-    id: 2,
-    title: 'Worldie ',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repellat explicabo aspernatur velit, vel, labore.',
-    image: worldy,
-    tags: ['tailwind', 'react', 'api'],
-    repoLink: '/',
-    liveLink: '/',
-  },
-
-  {
-    id: 3,
-    title: 'Easy Banking',
-    desc: 'Labore doloremque voluptatem cum suscipit, expedita rem fugit illum iure repudiandae? In quo dolorum beatae explicabo?',
-    image: bank,
-    tags: ['tailwind', 'react', 'api'],
-    repoLink: '/',
-    liveLink: '/',
+    id: 12,
+    title: 'Folarooney - A food ordering app',
+    desc: 'Minus repellat explicabo aspernatur velit, vel, labore doloremque voluptatem cum suscipit,In quo dolorum beatae explicabo?',
+    image: folarooney,
+    tags: ['mern', 'socket.io', 'express', 'tailwind'],
+    repoLink: 'https://github.com/afolasope/Folarooney',
+    liveLink: 'https://folarooney.onrender.com/',
   },
   {
     id: 4,
@@ -36,8 +30,37 @@ const projects = [
     desc: 'Labore doloremque voluptatem cum suscipit, expedita rem fugit illum iure repudiandae? In quo dolorum beatae explicabo?',
     image: todo,
     tags: ['tailwind', 'react', 'api'],
-    repoLink: '/',
-    liveLink: '/',
+    repoLink: 'https://github.com/afolasope/task-manager',
+    liveLink: 'https://task-manager-fola.netlify.app/',
+  },
+  {
+    id: 1,
+    title: 'Explora',
+    desc: 'Minus repellat explicabo aspernatur velit, vel, labore doloremque voluptatem cum suscipit,In quo dolorum beatae explicabo?',
+    image: space,
+    tags: ['html', 'css', 'javascript'],
+    repoLink: 'https://github.com/afolasope/space-explorer',
+    liveLink:
+      'https://afolasope.github.io/space-explorer/starter-code/destination.html',
+  },
+  {
+    id: 2,
+    title: 'Worldie ',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repellat explicabo aspernatur velit, vel, labore.',
+    image: worldy,
+    tags: ['html', 'css', 'javascript'],
+    repoLink: 'https://github.com/afolasope/worldly',
+    liveLink: 'https://worldy.netlify.app/',
+  },
+
+  {
+    id: 3,
+    title: 'Easy Banking',
+    desc: 'Labore doloremque voluptatem cum suscipit, expedita rem fugit illum iure repudiandae? In quo dolorum beatae explicabo?',
+    image: bank,
+    tags: ['scss', 'html', 'javascript'],
+    repoLink: 'https://github.com/afolasope/easy-bank',
+    liveLink: 'https://enchanting-easy-banking.netlify.app/',
   },
 ];
 

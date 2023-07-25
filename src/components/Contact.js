@@ -13,7 +13,7 @@ const Contact = () => {
       <h3 className="text-3xl font-semibold text-center mb-6">Reach Out!</h3>
       <p className="mb-6 text-center">
         Are You Interested In A Web Developer That Loves Fun Builds And
-        Projects? Hit Me Up. <br /> I'm Open To Freelance, Part Time And Junior
+        Projects? Hit Me Up. <br /> I'm Open To Freelance, Part Time, Frontend Devaloper And Fullstack
         Developer Roles. <br /> Get In Touch With Me
       </p>
       <button className="px-4 py-2 m-auto block bg-[#ED765D] rounded-lg text-[#fff] mt-12 ">

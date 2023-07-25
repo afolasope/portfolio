@@ -19,13 +19,15 @@ const Projects = () => {
                 key={id}
                 className="relative mb-12 bg-[#F5F8FA] shadow-md "
               >
-                <div className="image-container p-3">
-                  <img src={image} alt="" />
+                <div className="image-container p-3 max-h-52 border ">
+                  <img src={image} alt="" className="h-full w-full" />
                 </div>
                 <div className="md:hidden text-center">
                   <button className="mr-6 text-sm bg-[#eee] px-3 py-2 rounded-md">
                     <a
                       href={repoLink}
+                      target="_blank"
+                      rel="noreferrer"
                       className="flex items-center space-x-2 text-lg"
                     >
                       <span>Source code</span>
@@ -37,6 +39,8 @@ const Projects = () => {
                   <button className="text-sm bg-[#eee] px-3 py-2 rounded-md">
                     <a
                       href={liveLink}
+                      target="_blank"
+                      rel="noreferrer"
                       className="flex items-center space-x-2 text-lg"
                     >
                       <span>Live link</span>
@@ -67,6 +71,8 @@ const Projects = () => {
                     <button className="mr-6 text-sm bg-[#414245] px-3 py-2 rounded-md">
                       <a
                         href={repoLink}
+                        target="_blank"
+                        rel="noreferrer"
                         className="flex items-center space-x-2 text-lg"
                       >
                         <span>Source code</span>
@@ -78,6 +84,8 @@ const Projects = () => {
                     <button className="text-sm bg-[#414245] px-3 py-2 rounded-md">
                       <a
                         href={liveLink}
+                        target="_blank"
+                        rel="noreferrer"
                         className="flex items-center space-x-2 text-lg"
                       >
                         <span>Live link</span>
