@@ -9,7 +9,7 @@ const projects = [
   {
     id: 11,
     title: 'Scrs - Url shortening app',
-    desc: 'Minus repellat explicabo aspernatur velit, vel, labore doloremque voluptatem cum suscipit,In quo dolorum beatae explicabo?',
+    desc: '',
     image: scrs,
     tags: ['mern', 'express', 'react ', 'api'],
     repoLink: 'https://github.com/afolasope/url-shortener-mern',
@@ -18,7 +18,7 @@ const projects = [
   {
     id: 12,
     title: 'Folarooney - A food ordering app',
-    desc: 'Minus repellat explicabo aspernatur velit, vel, labore doloremque voluptatem cum suscipit,In quo dolorum beatae explicabo?',
+    desc: '',
     image: folarooney,
     tags: ['mern', 'socket.io', 'express', 'tailwind'],
     repoLink: 'https://github.com/afolasope/Folarooney',
@@ -27,7 +27,7 @@ const projects = [
   {
     id: 4,
     title: 'Taskify',
-    desc: 'Labore doloremque voluptatem cum suscipit, expedita rem fugit illum iure repudiandae? In quo dolorum beatae explicabo?',
+    desc: '',
     image: todo,
     tags: ['tailwind', 'react', 'api'],
     repoLink: 'https://github.com/afolasope/task-manager',
@@ -36,7 +36,7 @@ const projects = [
   {
     id: 1,
     title: 'Explora',
-    desc: 'Minus repellat explicabo aspernatur velit, vel, labore doloremque voluptatem cum suscipit,In quo dolorum beatae explicabo?',
+    desc: '',
     image: space,
     tags: ['html', 'css', 'javascript'],
     repoLink: 'https://github.com/afolasope/space-explorer',
@@ -46,7 +46,7 @@ const projects = [
   {
     id: 2,
     title: 'Worldie ',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repellat explicabo aspernatur velit, vel, labore.',
+    desc: '',
     image: worldy,
     tags: ['html', 'css', 'javascript'],
     repoLink: 'https://github.com/afolasope/worldly',
@@ -56,7 +56,7 @@ const projects = [
   {
     id: 3,
     title: 'Easy Banking',
-    desc: 'Labore doloremque voluptatem cum suscipit, expedita rem fugit illum iure repudiandae? In quo dolorum beatae explicabo?',
+    desc: '',
     image: bank,
     tags: ['scss', 'html', 'javascript'],
     repoLink: 'https://github.com/afolasope/easy-bank',
